@@ -1,0 +1,1 @@
+var express=require("express");var utility=require("utility");var app=express();app.get("/",function(e,r){var i=e.query.q;var t=utility.html5(i);r.send(t)});app.listen(3e3,function(e,r){console.log("app is running at port 3000")});

@@ -1,0 +1,1 @@
+var express=require("express");var app=express();app.get("/",function(e,p){p.send("Hello World")});app.listen(3e3,function(){console.log("app is listening at port 3000")});

@@ -1,0 +1,1 @@
+var async=require("async");var concurrencyCount=0;var fetchUrl=function(n,c){var o=parseInt(Math.random()*1e7%2e3,10);concurrencyCount++;console.log("现在的并发数是",concurrencyCount,"，正在抓取的是",n,"，耗时"+o+"毫秒");setTimeout(function(){concurrencyCount--;c(null,n+" html content")},o)};var urls=[];for(var i=0;i

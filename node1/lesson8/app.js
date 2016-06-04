@@ -1,0 +1,1 @@
+var express=require("express");var fibonacci=function(r){if(typeof r!=="number"||isNaN(r)){throw new Error("n should be a Number")}if(r<0){throw new="" error("n="" should="">= 0")}if(r>10){throw new Error("n should </0){throw>
