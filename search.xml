@@ -3,6 +3,12 @@
   
   
     
+    <entry>
+      <title><![CDATA[终于可以长出一口气了]]></title>
+      <url>http://post.zz173.com/detail/%E7%BB%88%E4%BA%8E%E5%8F%AF%E4%BB%A5%E9%95%BF%E5%87%BA%E4%B8%80%E5%8F%A3%E6%B0%94%E4%BA%86.html</url>
+      <content type="html"><![CDATA[<!-- build time:2016-07-30 19:04:19 --><h2 id="事故"><a href="#事故" class="headerlink" title="事故"></a>事故</h2><p>今天博客照常更新，看起来风平浪静，然后其实我为了挽救博客，已经耗费了一天的时间和精力。</p><p>今天打开硬盘一看，博客所有的源文件全部丢失了。当时我还比较放松，因为这根本不可能阿。然而我再三检查之下，发现确实不见了。一个都没有了，就像被人故意删除的一样。坑爹啊，我没有备份过这个东西，这可怎么办呀？</p><a id="more"></a><h2 id="心情"><a href="#心情" class="headerlink" title="心情"></a>心情</h2><p>心里十分的烦躁，这下麻烦了啊。截至目前一共有70多篇博客，是几年来的记录，这部分丢失了损失无法承受。看来这下得下一番功夫去挽救了。其实此刻我并不慌张，因为github里还有之前发布出去的html文件。我只需要对他进行格式整理即可。 然而70多篇，整理起来耗时费力，实在非我所愿。</p><h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><p>大概10年前做网站的时候，流行<code>采集</code>，原理就是用软件来爬取网站的内容，然后再整理发布到自己的网站上。那我今天这种情况也只好如此了。</p><h3 id="爬数据"><a href="#爬数据" class="headerlink" title="爬数据"></a>爬数据</h3><p>一番查看，找到的目的列表就是<code>归档页</code>，先从<code>归档页</code>获获取所有的博文网址，放到一个数组里，然后再分别抓取每篇博文的内容。 一个技术大坑是，我博文的网址是中文，中文的网址必须转义才成。</p><h3 id="数据提取"><a href="#数据提取" class="headerlink" title="数据提取"></a>数据提取</h3><p>从爬到的数据中提取到自己想要的对象，这着实是一门技术活，我也做过很多次类似的事情。不同以往的操作字符串或者正则表达式，此处我直接操作dom树，通过dom节点直接定位到关键数据并提取。</p><h3 id="对象转换"><a href="#对象转换" class="headerlink" title="对象转换"></a>对象转换</h3><p>抓取到标题、发表日期、标签、分类还要转为<code>yaml</code>格式的<code>font matter</code>，放在源文件的头部。<br>其中包含数组和对象的转换。</p><h3 id="内容转换"><a href="#内容转换" class="headerlink" title="内容转换"></a>内容转换</h3><p>抓取到的数据中含有编译后的信息，需要去除或修正，同样操作dom树即可。修正完毕后再转为<code>markdown</code>。</p><h3 id="保存"><a href="#保存" class="headerlink" title="保存"></a>保存</h3><p>最后用utf-8的格式输出成文件即可。</p><h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p>最后终于顺利的把数据全部抓了回来，现在看到的即是<code>repost</code>的结果。</p><h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p>此项目的源码我会整理后开源在github上，届时另外开文讲述。</p><p><!-- more --></p><hr><p>本文发表自 <a href="http://post.zz173.com/detail/终于可以长出一口气了.html">http://post.zz173.com/detail/终于可以长出一口气了.html</a> 未经本人同意，禁止转载。</p><hr><p></p><!-- rebuild by neat -->]]></content>
+    </entry>
+    
   
   
 </search>
